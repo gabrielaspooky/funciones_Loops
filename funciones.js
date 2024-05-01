@@ -25,13 +25,22 @@ alert(`${celsiusTemperature}°C es igual a: ${fahrenheitTemperature}°F`)
 
 temperatureConverter()
 
-3.- Escribe una función que acepte dos números, un mínimo y un máximo, y devuelva un número aleatorio entre dichos números. Para ello, tendrás que descubrir cómo funciona el método Math.random().
+// 3.- Escribe una función que acepte dos números, un mínimo y un máximo, y devuelva un número aleatorio entre dichos números. Para ello, tendrás que descubrir cómo funciona el método Math.random().
 
-4.- Escribe una función que calcule el área de un círculo si se le proporciona el radio.
+function randomNumber(minimum, maximum) {
+    return (Math.floor(Math.random() * (maximum - minimum + 1) + minimum)); // Se usa el método Math.floor adicionalmente, con la finalidad de que la función evite devolver decimales.
+    
+}
+randomNumber (5, 15)
+
+
+
+
+// 4.- Escribe una función que calcule el área de un círculo si se le proporciona el radio.
 
 function circleArea() {
 let circleRadius = prompt("¿Cuál es el radio de tu circunferencia");
-const circleAreaResult = 3.14 * (circleRadius * circleRadius);
+const circleAreaResult = Math.PI * (circleRadius * circleRadius); // Utilizo la propiedad Math.PI a modo de abreviación del 3,14 //
 
     alert(`El área de tu círculo es igual a ${circleAreaResult}`);
 } 
@@ -39,9 +48,14 @@ const circleAreaResult = 3.14 * (circleRadius * circleRadius);
 circleArea()
 
 
+// // 5.- Escribe una función que te adivine el futuro. Recibirá como parámetros:
+// Número de hijos.
+// Nombre de la pareja.
+// Nombre de una ciudad.
+// Un trabajo. La función devolverá "Trabajarás en <<ciudad>>, trabajando como <<trabajo>>, y tendrás <<número de hijos>> hijos con <<pareja>>.". Deberás usar template literals para ello.
 
-5.- Escribe una función que te adivine el futuro. Recibirá como parámetros:
-Número de hijos.
-Nombre de la pareja.
-Nombre de una ciudad.
-Un trabajo. La función devolverá "Trabajarás en <<ciudad>>, trabajando como <<trabajo>>, y tendrás <<número de hijos>> hijos con <<pareja>>.". Deberás usar template literals para ello.
+function guessFuture(params) {
+
+
+    
+}
