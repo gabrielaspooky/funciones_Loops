@@ -33,9 +33,6 @@ function randomNumber(minimum, maximum) {
 }
 randomNumber (5, 15)
 
-
-
-
 // 4.- Escribe una función que calcule el área de un círculo si se le proporciona el radio.
 
 function circleArea() {
@@ -54,8 +51,34 @@ circleArea()
 // Nombre de una ciudad.
 // Un trabajo. La función devolverá "Trabajarás en <<ciudad>>, trabajando como <<trabajo>>, y tendrás <<número de hijos>> hijos con <<pareja>>.". Deberás usar template literals para ello.
 
-function guessFuture(params) {
+function generateFuture() { 
 
+    let NumberOfSons = [12, 8, 7, 9, 11];
 
+    let randomNumber = Math.floor(Math.random() * NumberOfSons.length); 
+
+    let sonsNumber = NumberOfSons[randomNumber];
+
+    let randomNamesforPartner = ['Al Pacino', 'Will Smith', 'Zac Efron', 'Angelina Jolie', 'Robert Downey Jr.'];
+
+    let randomNames = Math.floor(Math.random() * randomNamesforPartner.length); 
+
+    let partnerName = randomNamesforPartner[randomNames];
+
+    let randomCity = ['Ciudad Ojeda', 'Cabimas', 'Maracaibo', 'Machiques', 'Mene Grande', 'Los Puertos de Altagracia'];
+
+    let cities = Math.floor(Math.random() * randomCity.length);  
+
+    let finalCity = randomCity[cities];
+
+    let randomJob = ['Enchufado', 'Dirigente estudiantil', 'Repartidor del CLAP', 'Coyote', 'Dependiente en negocio tapadera'];
+
+    let availableJobs = Math.floor(Math.random() * randomJob.length);  
+
+    let finalJob = randomJob[availableJobs];
+
+return alert(`Trabajarás en ${finalCity}, trabajando como ${finalJob} y tendrás ${sonsNumber} hij@s con ${partnerName}`)
     
 }
+
+generateFuture()
