@@ -1,5 +1,18 @@
 // 1.- Escribe una función que acepte la medida de los dos lados de un rectángulo y devuelva el área de dicho rectángulo. Si no se le pasa ningún parámetro, los lados deberán ser, por defecto, 5 y 3. Puedes usar prompts para los datos (opcional) y la consola del navegador para comprobar el resultado.
 
+function rectangleSides()
+{
+    let rectangleSideWidth = prompt("¿Cuánto mide tu rectángulo de ancho?");
+    let rectangleSideLength = prompt("¿Cuánto mide tu rectángulo de largo?");
+    let rectangleArea = `${rectangleSideWidth}` * `${rectangleSideLength}`;
+    
+    alert(`El área de tu rectángulo equivale a ${rectangleArea} metros al cuadrado`);
+
+   
+}
+
+rectangleSides()
+
 // 2.- Escribe una función que acepte grados Celsius y devuelva la conversión a grados Fahrenheit.
 
 function temperatureConverter() 
@@ -15,6 +28,17 @@ temperatureConverter()
 3.- Escribe una función que acepte dos números, un mínimo y un máximo, y devuelva un número aleatorio entre dichos números. Para ello, tendrás que descubrir cómo funciona el método Math.random().
 
 4.- Escribe una función que calcule el área de un círculo si se le proporciona el radio.
+
+function circleArea() {
+let circleRadius = prompt("¿Cuál es el radio de tu circunferencia");
+const circleAreaResult = 3.14 * (circleRadius * circleRadius);
+
+    alert(`El área de tu círculo es igual a ${circleAreaResult}`);
+} 
+
+circleArea()
+
+
 
 5.- Escribe una función que te adivine el futuro. Recibirá como parámetros:
 Número de hijos.
