@@ -1,7 +1,19 @@
 
 // 1.- 
 //         1.1.- Itera del 0 al 10 usando un bucle "for" e imprime cada número por consola.
+
+for (let numberList = 0; numberList < 11; numberList++) {
+    console.log(numberList);
+  }
+
 //         1.2.-  Haz lo mismo con un bucle "while".
+
+numberList = 0;
+while (numberList < 11) {
+    numberList++
+  console.log(numberList-1);
+}
+
 //         1.3.- Haz lo mismo del 83 al 24 (bucle "for" y bocle "while").
 
 // 2.- Crea la variable "num" y haz que un bucle "for" imprima la tabla de multiplicar de ese número (del 0 al 10) en la consola, siguiendo el siguiente formato:
@@ -10,6 +22,11 @@
 // num x 1 = num * 1
 // num x 2 = num * 2
 // etc...
+
+for (let num = 0; num * 2 <= 20; num++) {
+    console.log("2 x " + num + " = " + num * 2);
+}
+
 
 // 3.- Imprime por consola el siguiente patrón:
 //  i    i**2   i**3
