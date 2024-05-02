@@ -51,7 +51,7 @@ circleArea()
 // Nombre de una ciudad.
 // Un trabajo. La función devolverá "Trabajarás en <<ciudad>>, trabajando como <<trabajo>>, y tendrás <<número de hijos>> hijos con <<pareja>>.". Deberás usar template literals para ello.
 
-function generateFuture() {  
+function generateFuture() { 
 
     let NumberOfSons = [12, 8, 7, 9, 11];
 

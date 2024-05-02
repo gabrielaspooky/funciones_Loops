@@ -14,7 +14,19 @@ while (numberList < 11) {
   console.log(numberList-1);
 }
 
-//         1.3.- Haz lo mismo del 83 al 24 (bucle "for" y bocle "while").
+//         1.3.- Haz lo mismo del 83 al 24 (bucle "for" y bucle "while").
+
+for (let numberList = 83; numberList >= 24; numberList--) {
+console.log("Lista de números del 83 al 24: " + numberList);
+}
+
+//
+
+numberList = 84
+while (numberList >=25) {
+    numberList--
+    console.log("Lista de números del 83 al 24: " + numberList);
+}
 
 // 2.- Crea la variable "num" y haz que un bucle "for" imprima la tabla de multiplicar de ese número (del 0 al 10) en la consola, siguiendo el siguiente formato:
 
@@ -46,6 +58,10 @@ for (let num = 0; num * 2 <= 20; num++) {
 
 // 4.- Imprime por consola, , la suma de todos los números del 0 al 10.
 
+for (let num = 0; num * 2 <= 20; num++) {
+    console.log("2 x " + num + " = " + num * 2);
+}
+
 // 5.-
 //          5.1.- Imprime por consola los números del 0 hasta el 100, pero sólo los que estén comprendidos entre el 10 y 23, entre el 56 y 62.
 //          5.2.- Luego haz otro log que muestre solo los números divisibles entre 5 o 7.
@@ -62,6 +78,10 @@ for (let num = 0; num * 2 <= 20; num++) {
 // ######
 // #######
 
+for (let patron = 1; patron <=7; patron++) {
+    console.log("#".repeat(patron));
+}
+
 // 8.- Imprime por consola el siguiente patrón:
 //                ##
 //             ####
@@ -76,3 +96,11 @@ for (let num = 0; num * 2 <= 20; num++) {
 //        ######
 //          ####
 //            ##
+
+for (let patronIncremento = 0; patronIncremento <=6; patronIncremento++) {
+    console.log("#".repeat(patronIncremento*2));
+}
+for (let patronDecremento = 7; patronDecremento >=0; patronDecremento--) {
+    console.log("#".repeat(patronDecremento*2));
+    
+}
