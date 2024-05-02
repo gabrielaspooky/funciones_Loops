@@ -56,6 +56,8 @@ for (let num = 0; num * 2 <= 20; num++) {
 //  10   100   1000
 
 
+
+
 // 4.- Imprime por consola, , la suma de todos los números del 0 al 10.
 
 for (let num = 0; num * 2 <= 20; num++) {
@@ -63,10 +65,40 @@ for (let num = 0; num * 2 <= 20; num++) {
 }
 
 // 5.-
-//          5.1.- Imprime por consola los números del 0 hasta el 100, pero sólo los que estén comprendidos entre el 10 y 23, entre el 56 y 62.
+//          5.1.- Imprime por consola los números del 0 hasta el 100, pero sólo los que estén comprendidos entre el 10 y 23, entre el 56 y  62.
 //          5.2.- Luego haz otro log que muestre solo los números divisibles entre 5 o 7.
 
+for (let numberList = 0; numberList <= 100; numberList++) {
+    if (numberList >= 10 && numberList <= 23) {
+        console.log("Lista de números entre 10 y 23: " + numberList);
+    } else if (numberList >= 56 && numberList <= 62) {
+        console.log("Lista de números entre 56 y 62: " + numberList);
+    } else if (numberList % 5 === 0 || numberList % 7 === 0) {
+        console.log("Números divisibles entre 5 o 7: " + numberList);
+    }
+}
+
 // 6.- Pídele al usuario que introduzca un número e imprime por consola: "La suma de todos los números pares del 0 al <<num>> es <<result>>, y la suma de todos los números impares del 0 al <<num>> es <<result>>."
+
+function sumaParEImpar() {
+    let userNumber = parseInt(prompt("Introduce un número"));
+    let sumaPar = 0;
+    let sumaImpar = 0;
+
+    for (let i = 0; i <= userNumber; i++) {
+        if (i % 2 === 0) { 
+            sumaPar += i; 
+        } else { 
+            sumaImpar += i; 
+        }
+    }
+
+    console.log(`La suma de todos los números pares del 0 al ${userNumber} es ${sumaPar}`);
+    console.log(`La suma de todos los números impares del 0 al ${userNumber} es ${sumaImpar}`);
+}
+
+sumaParEImpar();
+
 
 // 7.- Imprime el siguiente patrón por consola:
 
@@ -96,6 +128,7 @@ for (let patron = 1; patron <=7; patron++) {
 //        ######
 //          ####
 //            ##
+
 
 for (let patronIncremento = 0; patronIncremento <=6; patronIncremento++) {
     console.log("#".repeat(patronIncremento*2));
